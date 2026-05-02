@@ -28,16 +28,14 @@ p4/
 │   ├── pages/
 │   │   ├── Home.js             # Home page with hero and stats
 │   │   ├── About.js            # About page with qualifications and activities
-│   │   ├── Projects.js         # Projects page with project cards
-│   │   └── Resume.js           # Resume page with experience and skills
+│   │   └── Projects.js         # Projects page with project cards
 │   ├── styles/
 │   │   ├── index.css           # Main portfolio styles (from original)
 │   │   ├── Navbar.css          # Navbar component styles
 │   │   ├── Footer.css          # Footer component styles
 │   │   ├── Home.css            # Home page styles
 │   │   ├── About.css           # About page styles
-│   │   ├── Projects.css        # Projects page styles
-│   │   └── Resume.css          # Resume page styles
+│   │   └── Projects.css        # Projects page styles
 │   ├── App.js                  # Main app with routing
 │   ├── App.css                 # App layout styles
 │   └── index.js                # React entry point
@@ -104,7 +102,15 @@ export const portfolioInfo = {
 ```
 
 ### Update Page Content
+
 Each page is a standalone component with easily modifiable content arrays. Edit the data structures inside each page component to change content.
+
+## Pages Included
+
+- **Home Page**: Hero section with profile image, introduction, and statistics
+- **About Page**: Background, qualifications, skills, and activities
+- **Projects Page**: Showcase of 4 projects with descriptions and links
+- **2048 Game**: Interactive sliding tile puzzle game
 
 ### Add a New Page
 1. Create a new file in `src/pages/` (e.g., `Blog.js`)
@@ -114,11 +120,12 @@ Each page is a standalone component with easily modifiable content arrays. Edit 
 
 ## Key Features
 
-- **Component-Based Architecture**: Easy maintenance and updates
+- **Modular Components**: Easy to update navigation, footer, and content
+- **React Router**: Clean multi-page navigation
 - **Responsive Design**: Works on all devices
-- **Interactive Elements**: Mobile menu, scroll animations, hover effects
 - **SEO-Friendly**: Proper meta tags and semantic HTML
 - **Fast Loading**: Optimized React build
+- **Interactive Game**: 2048 sliding tile puzzle game for entertainment
 
 ## Technologies Used
 

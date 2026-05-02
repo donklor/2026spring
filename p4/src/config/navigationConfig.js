@@ -14,7 +14,7 @@ export const socialLinks = [
   },
   {
     icon: 'fas fa-graduation-cap',
-    url: 'https://www.codecademy.com',
+    url: 'https://www.codecademy.com/profiles/Donklor...',
     label: 'Codecademy'
   },
   {

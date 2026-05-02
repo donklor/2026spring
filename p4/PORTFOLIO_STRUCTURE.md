@@ -20,15 +20,14 @@ p4/
 │   │   ├── Home.js             # Home page with hero and stats
 │   │   ├── About.js            # About page with qualifications and activities
 │   │   ├── Projects.js         # Projects page with project cards
-│   │   └── Resume.js           # Resume page with experience and skills
+│   │   └── Game.js             # Interactive 2048 sliding tile game
 │   ├── styles/
 │   │   ├── index.css           # Main portfolio styles (from original)
 │   │   ├── Navbar.css          # Navbar component styles
 │   │   ├── Footer.css          # Footer component styles
 │   │   ├── Home.css            # Home page styles
 │   │   ├── About.css           # About page styles
-│   │   ├── Projects.css        # Projects page styles
-│   │   └── Resume.css          # Resume page styles
+│   │   └── Projects.css        # Projects page styles
 │   ├── App.js                  # Main app with routing
 │   ├── App.css                 # App layout styles
 │   └── index.js                # React entry point

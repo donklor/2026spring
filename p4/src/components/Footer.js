@@ -19,7 +19,8 @@ const Footer = () => {
                 const icons = {
                   '/': 'fas fa-home',
                   '/about': 'fas fa-user',
-                  '/projects': 'fas fa-project-diagram'
+                  '/projects': 'fas fa-project-diagram',
+                  '/game': 'fas fa-th'
                 };
                 return (
                   <li key={item.id}>
