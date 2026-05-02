@@ -1,0 +1,25 @@
+/* Resume Page Styles */
+/* Base resume styles inherited from index.css */
+
+.experience-item,
+.education-item {
+  border-left: 3px solid #3498db;
+  padding-left: 1.5rem;
+}
+
+.skills-list li {
+  list-style: none;
+}
+
+.certifications-list li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
