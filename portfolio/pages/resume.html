@@ -1,284 +1,166 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Portfolio</title>
-    <link rel='stylesheet' href='../css/style.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
-    <style>
-        .resume-section { padding: 4rem 0; background-color: white; }
-        .resume-container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
-        .resume-header { text-align: center; margin-bottom: 3rem; }
-        .resume-header h1 { color: #2c3e50; margin-bottom: 0.5rem; }
-        .resume-header p { color: #7f8c8d; font-size: 1.1rem; }
-        .resume-content { display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; }
-        .section-title { color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid #3498db; }
-        .experience-item { margin-bottom: 2rem; }
-        .experience-header { display: flex; justify-content: space-between; margin-bottom: 0.5rem; }
-        .experience-title { color: #2c3e50; font-weight: bold; }
-        .experience-date { color: #3498db; font-weight: bold; }
-        .experience-company { color: #e74c3c; margin-bottom: 0.5rem; }
-        .experience-description { color: #7f8c8d; line-height: 1.6; }
-        .education-item { margin-bottom: 2rem; }
-        .education-header { display: flex; justify-content: space-between; margin-bottom: 0.5rem; }
-        .education-title { color: #2c3e50; font-weight: bold; }
-        .education-date { color: #3498db; font-weight: bold; }
-        .education-school { color: #e74c3c; margin-bottom: 0.5rem; }
-        .skills-list { list-style: none; }
-        .skills-list li { padding: 0.75rem 0; border-bottom: 1px solid #ecf0f1; display: flex; justify-content: space-between; }
-        .skill-name { color: #2c3e50; }
-        .skill-level { color: #3498db; font-weight: bold; }
-        .sidebar-card { background: #f8f9fa; padding: 1.5rem; border-radius: 10px; margin-bottom: 2rem; }
-        .sidebar-card h3 { color: #2c3e50; margin-bottom: 1rem; }
-        .contact-info { list-style: none; }
-        .contact-info li { margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem; }
-        .contact-info i { color: #3498db; width: 20px; }
-        .download-btn { display: inline-block; background: #3498db; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background 0.3s; margin-top: 1rem; }
-        .download-btn:hover { background: #2980b9; }
-        .certifications-list { list-style: none; }
-        .certifications-list li { padding: 0.75rem 0; border-bottom: 1px solid #ecf0f1; color: #2c3e50; }
-        .certifications-list li i { color: #27ae60; margin-right: 0.5rem; }
-        @media (max-width: 768px) { .resume-content { grid-template-columns: 1fr; } }
-    </style>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <nav class='navbar'>
-        <div class='nav-container'>
-            <div class='nav-logo'>
-                <a href='../index.html'>MyPortfolio</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">MyPortfolio</a>
             </div>
-            <ul class='nav-menu'>
-                <li class='nav-item'>
-                    <a href='../index.html' class='nav-link'>Home</a>
-                </li>
-                <li class='nav-item'>
-                    <a href='about.html' class='nav-link'>About</a>
-                </li>
-                <li class='nav-item'>
-                    <a href='projects.html' class='nav-link'>Projects</a>
-                </li>
-                <li class='nav-item'>
-                    <a href='resume.html' class='nav-link active'>Resume</a>
-                </li>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="resume.html" class="nav-link active">Resume</a></li>
             </ul>
-            <div class='nav-toggle' id='mobile-menu'>
-                <span class='bar'></span>
-                <span class='bar'></span>
-                <span class='bar'></span>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
     </nav>
 
     <main>
-        <section class='hero' style='padding: 4rem 0;'>
-            <div class='container'>
-                <h1 class='hero-title'>My Resume</h1>
-                <p class='hero-subtitle'>Professional background and qualifications</p>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">My Resume</h1>
+                <p class="hero-subtitle">Professional background and qualifications.</p>
             </div>
         </section>
 
-        <section class='resume-section'>
-            <div class='resume-container'>
-                <div class='resume-header'>
+        <section class="resume-section">
+            <div class="resume-container">
+                <div class="resume-header">
                     <h1>Professional Resume</h1>
-                    <p>Full Stack Developer & Technology Enthusiast</p>
-                    <a href='#' class='download-btn'><i class='fas fa-download'></i> Download PDF</a>
+                    <p>Full-stack developer with experience in web development, robotics, and educational projects.</p>
+                    <a href="#" class="download-btn"><i class="fas fa-download"></i> Download PDF</a>
                 </div>
 
-                <div class='resume-content'>
-                    <div class='main-content'>
-                        <h2 class='section-title'>Work Experience</h2>
-                        
-                        <div class='experience-item'>
-                            <div class='experience-header'>
-                                <span class='experience-title'>Junior Web Developer</span>
-                                <span class='experience-date'>2024 - Present</span>
+                <div class="resume-content">
+                    <div class="main-content">
+                        <h2 class="section-title">Work Experience</h2>
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <span class="experience-title">Junior Web Developer</span>
+                                <span class="experience-date">2024 - Present</span>
                             </div>
-                            <div class='experience-company'>Tech Solutions Inc.</div>
-                            <div class='experience-description'>
-                                Developing responsive web applications using modern frameworks. Collaborating with cross-functional teams to deliver high-quality software solutions. Participating in code reviews and implementing best practices for maintainability.
-                            </div>
+                            <div class="experience-company">Tech Solutions Inc.</div>
+                            <p class="experience-description">Developing responsive web applications, collaborating with teams, and applying modern front-end and back-end practices to deliver functional and polished solutions.</p>
                         </div>
-
-                        <div class='experience-item'>
-                            <div class='experience-header'>
-                                <span class='experience-title'>Freelance Developer</span>
-                                <span class='experience-date'>2023 - 2024</span>
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <span class="experience-title">Freelance Developer</span>
+                                <span class="experience-date">2023 - 2024</span>
                             </div>
-                            <div class='experience-company'>Self-Employed</div>
-                            <div class='experience-description'>
-                                Created custom websites and web applications for small businesses and startups. Managed full project lifecycle from requirements gathering to deployment. Built strong client relationships through effective communication and timely delivery.
-                            </div>
+                            <div class="experience-company">Self-Employed</div>
+                            <p class="experience-description">Built websites and web applications for small businesses, handled project planning, and maintained client relationships across multiple deliveries.</p>
                         </div>
-
-                        <div class='experience-item'>
-                            <div class='experience-header'>
-                                <span class='experience-title'>Coding Instructor Assistant</span>
-                                <span class='experience-date'>2023 - 2023</span>
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <span class="experience-title">Coding Instructor Assistant</span>
+                                <span class="experience-date">2023</span>
                             </div>
-                            <div class='experience-company'>Local Coding Bootcamp</div>
-                            <div class='experience-description'>
-                                Assisted lead instructor in teaching web development fundamentals to beginner students. Helped students debug code and understand programming concepts. Created supplementary learning materials and exercises.
-                            </div>
+                            <div class="experience-company">Local Bootcamp</div>
+                            <p class="experience-description">Supported beginner students in learning programming concepts, debugging code, and developing interactive website projects.</p>
                         </div>
-
-                        <h2 class='section-title'>Education</h2>
-                        
-                        <div class='education-item'>
-                            <div class='education-header'>
-                                <span class='education-title'>High School Diploma</span>
-                                <span class='education-date'>2022 - 2024</span>
+                        <h2 class="section-title">Education</h2>
+                        <div class="education-item">
+                            <div class="education-header">
+                                <span class="education-title">High School Diploma</span>
+                                <span class="education-date">2022 - 2024</span>
                             </div>
-                            <div class='education-school'>Science & Technology High School</div>
-                            <div class='experience-description'>
-                                Specialized in Computer Science and Mathematics. Graduated with honors. Participated in various coding competitions and technology clubs.
-                            </div>
+                            <div class="education-school">Science & Technology High School</div>
+                            <p class="education-description">Studied computer science and math, participated in coding competitions, and completed technology-focused coursework.</p>
                         </div>
-
-                        <div class='education-item'>
-                            <div class='education-header'>
-                                <span class='education-title'>Online Certifications</span>
-                                <span class='education-date'>2023 - Present</span>
+                        <div class="education-item">
+                            <div class="education-header">
+                                <span class="education-title">Online Certifications</span>
+                                <span class="education-date">2023 - Present</span>
                             </div>
-                            <div class='education-school'>Codecademy & Online Platforms</div>
-                            <div class='experience-description'>
-                                Completed comprehensive courses in web development, JavaScript, React, and Node.js. Maintained consistent learning schedule to stay updated with latest technologies.
-                            </div>
+                            <div class="education-school">Codecademy and Online Platforms</div>
+                            <p class="education-description">Completed training in web development, JavaScript, and responsive design to support continuous learning and skill growth.</p>
                         </div>
                     </div>
-
-                    <div class='sidebar'>
-                        <div class='sidebar-card'>
-                            <h3><i class='fas fa-briefcase'></i> Skills</h3>
-                            <ul class='skills-list'>
-                                <li>
-                                    <span class='skill-name'>HTML5 & CSS3</span>
-                                    <span class='skill-level'>90%</span>
-                                </li>
-                                <li>
-                                    <span class='skill-name'>JavaScript</span>
-                                    <span class='skill-level'>85%</span>
-                                </li>
-                                <li>
-                                    <span class='skill-name'>React.js</span>
-                                    <span class='skill-level'>80%</span>
-                                </li>
-                                <li>
-                                    <span class='skill-name'>Node.js</span>
-                                    <span class='skill-level'>75%</span>
-                                </li>
-                                <li>
-                                    <span class='skill-name'>Git & GitHub</span>
-                                    <span class='skill-level'>85%</span>
-                                </li>
-                                <li>
-                                    <span class='skill-name'>Responsive Design</span>
-                                    <span class='skill-level'>90%</span>
-                                </li>
+                    <aside class="sidebar">
+                        <div class="sidebar-card">
+                            <h3><i class="fas fa-briefcase"></i> Skills</h3>
+                            <ul class="skills-list">
+                                <li><span class="skill-name">HTML5 & CSS3</span><span class="skill-level">90%</span></li>
+                                <li><span class="skill-name">JavaScript</span><span class="skill-level">85%</span></li>
+                                <li><span class="skill-name">React.js</span><span class="skill-level">80%</span></li>
+                                <li><span class="skill-name">Node.js</span><span class="skill-level">75%</span></li>
+                                <li><span class="skill-name">Git & GitHub</span><span class="skill-level">85%</span></li>
+                                <li><span class="skill-name">Responsive Design</span><span class="skill-level">90%</span></li>
                             </ul>
                         </div>
-
-                        <div class='sidebar-card'>
-                            <h3><i class='fas fa-address-card'></i> Contact</h3>
-                            <ul class='contact-info'>
-                                <li>
-                                    <i class='fas fa-envelope'></i>
-                                    <span>developer@example.com</span>
-                                </li>
-                                <li>
-                                    <i class='fas fa-phone'></i>
-                                    <span>+1 (555) 123-4567</span>
-                                </li>
-                                <li>
-                                    <i class='fas fa-map-marker-alt'></i>
-                                    <span>San Francisco, CA</span>
-                                </li>
+                        <div class="sidebar-card">
+                            <h3><i class="fas fa-address-card"></i> Contact</h3>
+                            <ul class="contact-info">
+                                <li><i class="fas fa-envelope"></i> developer@example.com</li>
+                                <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                                <li><i class="fas fa-map-marker-alt"></i> San Francisco, CA</li>
                             </ul>
-                            <div class='social-links' style='margin-top: 1rem;'>
-                                <a href='https://github.com' target='_blank' class='social-link' style='font-size: 1.5rem; margin-right: 1rem;' aria-label='GitHub'>
-                                    <i class='fab fa-github'></i>
-                                </a>
-                                <a href='https://www.codecademy.com' target='_blank' class='social-link' style='font-size: 1.5rem; margin-right: 1rem;' aria-label='Codecademy'>
-                                    <i class='fas fa-graduation-cap'></i>
-                                </a>
-                                <a href='#' class='social-link' style='font-size: 1.5rem;' aria-label='LinkedIn'>
-                                    <i class='fab fa-linkedin'></i>
-                                </a>
+                            <div class="social-links">
+                                <a href="https://github.com/username/portfolio" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="https://www.codecademy.com" target="_blank" class="social-link" aria-label="Codecademy"><i class="fas fa-graduation-cap"></i></a>
+                                <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                             </div>
                         </div>
-
-                        <div class='sidebar-card'>
-                            <h3><i class='fas fa-certificate'></i> Certifications</h3>
-                            <ul class='certifications-list'>
-                                <li>
-                                    <i class='fas fa-check-circle'></i>
-                                    Responsive Web Design
-                                </li>
-                                <li>
-                                    <i class='fas fa-check-circle'></i>
-                                    JavaScript Algorithms
-                                </li>
-                                <li>
-                                    <i class='fas fa-check-circle'></i>
-                                    Front-End Development
-                                </li>
-                                <li>
-                                    <i class='fas fa-check-circle'></i>
-                                    Hour of Code Certified
-                                </li>
+                        <div class="sidebar-card">
+                            <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                            <ul class="certifications-list">
+                                <li><i class="fas fa-check-circle"></i> Responsive Web Design</li>
+                                <li><i class="fas fa-check-circle"></i> JavaScript Algorithms</li>
+                                <li><i class="fas fa-check-circle"></i> Front-End Development</li>
+                                <li><i class="fas fa-check-circle"></i> Hour of Code Certified</li>
                             </ul>
                         </div>
-                    </div>
+                    </aside>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class='footer'>
-        <div class='footer-container'>
-            <div class='footer-content'>
-                <div class='footer-section'>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
                     <h3>MyPortfolio</h3>
                     <p>Showcasing my journey in technology and development.</p>
                 </div>
-                <div class='footer-section'>
+                <div class="footer-section">
                     <h4>Quick Links</h4>
-                    <ul class='footer-links'>
-                        <li><a href='../index.html'><i class='fas fa-home'></i> Home</a></li>
-                        <li><a href='about.html'><i class='fas fa-user'></i> About</a></li>
-                        <li><a href='projects.html'><i class='fas fa-project-diagram'></i> Projects</a></li>
-                        <li><a href='resume.html'><i class='fas fa-file-alt'></i> Resume</a></li>
+                    <ul class="footer-links">
+                        <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                        <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                        <li><a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
                     </ul>
                 </div>
-                <div class='footer-section'>
+                <div class="footer-section">
                     <h4>Connect With Me</h4>
-                    <div class='social-links'>
-                        <a href='https://github.com' target='_blank' class='social-link' aria-label='GitHub'>
-                            <i class='fab fa-github'></i>
-                        </a>
-                        <a href='https://www.codecademy.com' target='_blank' class='social-link' aria-label='Codecademy'>
-                            <i class='fas fa-graduation-cap'></i>
-                        </a>
-                        <a href='#' class='social-link' aria-label='LinkedIn'>
-                            <i class='fab fa-linkedin'></i>
-                        </a>
-                        <a href='#' class='social-link' aria-label='Email'>
-                            <i class='fas fa-envelope'></i>
-                        </a>
+                    <div class="social-links">
+                        <a href="https://github.com/username/portfolio" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.codecademy.com" target="_blank" class="social-link" aria-label="Codecademy"><i class="fas fa-graduation-cap"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
                     </div>
-                    <p class='repo-link'>
-                        <i class='fab fa-github'></i>
-                        <a href='https://github.com/username/portfolio' target='_blank'>View GitHub Repository</a>
-                    </p>
+                    <p class="repo-link"><i class="fab fa-github"></i> <a href="https://github.com/username/portfolio" target="_blank">View GitHub Repository</a></p>
                 </div>
             </div>
-            <div class='footer-bottom'>
-                <p>&copy; 2026 MyPortfolio. All rights reserved. | Designed with <i class='fas fa-heart'></i></p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MyPortfolio. All rights reserved. | Designed with <i class="fas fa-heart"></i></p>
             </div>
         </div>
     </footer>
 
-    <script src='../js/main.js'></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

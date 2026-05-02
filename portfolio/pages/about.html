@@ -1,187 +1,138 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Portfolio</title>
-    <link rel='stylesheet' href='../css/style.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <nav class='navbar'>
-        <div class='nav-container'>
-            <div class='nav-logo'>
-                <a href='../index.html'>MyPortfolio</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">MyPortfolio</a>
             </div>
-            <ul class='nav-menu'>
-                <li class='nav-item'>
-                    <a href='../index.html' class='nav-link'>Home</a>
-                </li>
-                <li class='nav-item'>
-                    <a href='about.html' class='nav-link active'>About</a>
-                </li>
-                <li class='nav-item'>
-                    <a href='projects.html' class='nav-link'>Projects</a>
-                </li>
-                <li class='nav-item'>
-                    <a href='resume.html' class='nav-link'>Resume</a>
-                </li>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="resume.html" class="nav-link">Resume</a></li>
             </ul>
-            <div class='nav-toggle' id='mobile-menu'>
-                <span class='bar'></span>
-                <span class='bar'></span>
-                <span class='bar'></span>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
     </nav>
 
     <main>
-        <section class='hero'>
-            <div class='container'>
-                <h1 class='hero-title'>About Me</h1>
-                <p class='hero-subtitle'>My Background, Qualifications, and Activities</p>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">About Me</h1>
+                <p class="hero-subtitle">My background, qualifications, and activities.</p>
             </div>
         </section>
 
-        <section class='about-content' style='padding: 4rem 0; background-color: white;'>
-            <div class='container'>
-                <div style='display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;'>
+        <section class="about-content">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-intro">
+                        <h2 class="section-title">Who I Am</h2>
+                        <p>I am a dedicated learner with a passion for technology and creativity. I enjoy solving problems through code, design, and collaboration.</p>
+                        <p>My experience includes coursework, independent projects, and activities that span web development, robotics, and educational outreach.</p>
+                    </div>
                     <div>
-                        <h2 style='color: #2c3e50; margin-bottom: 1.5rem;'>My Story</h2>
-                        <p style='font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;'>
-                            I am a dedicated learner with a passion for technology and innovation. 
-                            My journey in the tech world began with curiosity and has evolved into 
-                            a deep commitment to creating meaningful solutions through code.
-                        </p>
-                        <p style='font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;'>
-                            Through hands-on projects and continuous learning, I have developed 
-                            strong problem-solving skills and the ability to adapt to new technologies 
-                            quickly. My approach combines technical expertise with creative thinking.
-                        </p>
-                    </div>
-                    <div style='text-align: center;'>
-                        <img src='../images/about.jpg' alt='About Me' style='width: 100%; max-width: 400px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);'>
+                        <img src="../images/about.jpg" alt="About Image" class="about-image">
                     </div>
                 </div>
 
-                <div style='margin-top: 4rem;'>
-                    <h2 style='color: #2c3e50; margin-bottom: 2rem; text-align: center;'>Qualifications</h2>
-                    <div style='display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;'>
-                        <div style='background: #f8f9fa; padding: 2rem; border-radius: 10px; border-left: 4px solid #3498db;'>
-                            <h3 style='color: #2c3e50; margin-bottom: 1rem;'><i class='fas fa-graduation-cap' style='color: #3498db;'></i> Education</h3>
-                            <ul style='list-style: none; line-height: 2;'>
-                                <li><i class='fas fa-check-circle' style='color: #27ae60;'></i> High School Diploma - Science Stream</li>
-                                <li><i class='fas fa-check-circle' style='color: #27ae60;'></i> Advanced Mathematics and Computer Science</li>
-                                <li><i class='fas fa-check-circle' style='color: #27ae60;'></i> Web Development Fundamentals</li>
-                                <li><i class='fas fa-check-circle' style='color: #27ae60;'></i> Programming Languages: HTML, CSS, JavaScript</li>
-                            </ul>
-                        </div>
-                        <div style='background: #f8f9fa; padding: 2rem; border-radius: 10px; border-left: 4px solid #e74c3c;'>
-                            <h3 style='color: #2c3e50; margin-bottom: 1rem;'><i class='fas fa-certificate' style='color: #e74c3c;'></i> Certifications</h3>
-                            <ul style='list-style: none; line-height: 2;'>
-                                <li><i class='fas fa-check-circle' style='color: #27ae60;'></i> Codecademy Web Development Path</li>
-                                <li><i class='fas fa-check-circle' style='color: #27ae60;'></i> Responsive Web Design Certification</li>
-                                <li><i class='fas fa-check-circle' style='color: #27ae60;'></i> JavaScript Algorithms and Data Structures</li>
-                                <li><i class='fas fa-check-circle' style='color: #27ae60;'></i> Front-End Development Libraries</li>
-                            </ul>
-                        </div>
-                        <div style='background: #f8f9fa; padding: 2rem; border-radius: 10px; border-left: 4px solid #2ecc71;'>
-                            <h3 style='color: #2c3e50; margin-bottom: 1rem;'><i class='fas fa-tools' style='color: #2ecc71;'></i> Technical Skills</h3>
-                            <ul style='list-style: none; line-height: 2;'>
-                                <li><i class='fas fa-check-circle' style='color: #27ae60;'></i> HTML5, CSS3, JavaScript (ES6+)</li>
-                                <li><i class='fas fa-check-circle' style='color: #27ae60;'></i> React.js, Node.js Basics</li>
-                                <li><i class='fas fa-check-circle' style='color: #27ae60;'></i> Git & GitHub Version Control</li>
-                                <li><i class='fas fa-check-circle' style='color: #27ae60;'></i> Responsive Design Principles</li>
-                            </ul>
-                        </div>
+                <div class="about-cards section-spacing">
+                    <div class="about-card">
+                        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> High School Diploma in Science & Technology</li>
+                            <li><i class="fas fa-check-circle"></i> Advanced courses in Computer Science and Mathematics</li>
+                            <li><i class="fas fa-check-circle"></i> Completed Codecademy Web Development learning path</li>
+                            <li><i class="fas fa-check-circle"></i> Hands-on experience with HTML, CSS, and JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="about-card">
+                        <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Responsive Web Design</li>
+                            <li><i class="fas fa-check-circle"></i> JavaScript Algorithms</li>
+                            <li><i class="fas fa-check-circle"></i> Front-End Development Libraries</li>
+                            <li><i class="fas fa-check-circle"></i> Hour of Code Completion</li>
+                        </ul>
+                    </div>
+                    <div class="about-card">
+                        <h3><i class="fas fa-tools"></i> Technical Skills</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> HTML5, CSS3, JavaScript (ES6+)</li>
+                            <li><i class="fas fa-check-circle"></i> React.js, Node.js basics</li>
+                            <li><i class="fas fa-check-circle"></i> Git & GitHub workflow</li>
+                            <li><i class="fas fa-check-circle"></i> Responsive design and accessibility</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div style='margin-top: 4rem;'>
-                    <h2 style='color: #2c3e50; margin-bottom: 2rem; text-align: center;'>Conducted Activities</h2>
-                    <div style='display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;'>
-                        <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 10px;'>
-                            <h3 style='margin-bottom: 1rem;'><i class='fas fa-code'></i> Hour of Code</h3>
-                            <p style='line-height: 1.6;'>
-                                Participated in the global Hour of Code initiative, completing multiple 
-                                coding challenges and tutorials. Gained foundational programming skills 
-                                and understanding of computational thinking.
-                            </p>
-                        </div>
-                        <div style='background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 2rem; border-radius: 10px;'>
-                            <h3 style='margin-bottom: 1rem;'><i class='fas fa-robot'></i> Robotics Club</h3>
-                            <p style='line-height: 1.6;'>
-                                Active member of the school robotics club. Worked on building and 
-                                programming autonomous robots using Arduino and sensors. Developed 
-                                teamwork and engineering skills.
-                            </p>
-                        </div>
-                        <div style='background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; padding: 2rem; border-radius: 10px;'>
-                            <h3 style='margin-bottom: 1rem;'><i class='fas fa-laptop-code'></i> Hackathons</h3>
-                            <p style='line-height: 1.6;'>
-                                Participated in local hackathons, collaborating with peers to develop 
-                                innovative solutions for real-world problems. Enhanced problem-solving 
-                                and time management skills.
-                            </p>
-                        </div>
-                        <div style='background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: white; padding: 2rem; border-radius: 10px;'>
-                            <h3 style='margin-bottom: 1rem;'><i class='fas fa-users'></i> Coding Workshops</h3>
-                            <p style='line-height: 1.6;'>
-                                Organized and led coding workshops for beginners in the community. 
-                                Helped others learn web development basics and fostered a collaborative 
-                                learning environment.
-                            </p>
-                        </div>
+                <div class="activity-grid section-spacing">
+                    <div class="activity-card">
+                        <h3><i class="fas fa-code"></i> Hour of Code</h3>
+                        <p>Participated in the Hour of Code initiative and completed interactive lessons that strengthened my programming fundamentals and computational thinking.</p>
+                    </div>
+                    <div class="activity-card">
+                        <h3><i class="fas fa-robot"></i> Robotics Club</h3>
+                        <p>Worked on robotics projects using Arduino and sensors to build autonomous machines and improve my engineering and teamwork skills.</p>
+                    </div>
+                    <div class="activity-card">
+                        <h3><i class="fas fa-users"></i> Hackathons</h3>
+                        <p>Joined hackathons to collaborate with peers, generate ideas quickly, and turn prototypes into working products under pressure.</p>
+                    </div>
+                    <div class="activity-card">
+                        <h3><i class="fas fa-chalkboard-teacher"></i> Workshops</h3>
+                        <p>Organized and led workshops that helped beginners learn web development concepts and develop confidence with code.</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class='footer'>
-        <div class='footer-container'>
-            <div class='footer-content'>
-                <div class='footer-section'>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
                     <h3>MyPortfolio</h3>
                     <p>Showcasing my journey in technology and development.</p>
                 </div>
-                <div class='footer-section'>
+                <div class="footer-section">
                     <h4>Quick Links</h4>
-                    <ul class='footer-links'>
-                        <li><a href='../index.html'><i class='fas fa-home'></i> Home</a></li>
-                        <li><a href='about.html'><i class='fas fa-user'></i> About</a></li>
-                        <li><a href='projects.html'><i class='fas fa-project-diagram'></i> Projects</a></li>
-                        <li><a href='resume.html'><i class='fas fa-file-alt'></i> Resume</a></li>
+                    <ul class="footer-links">
+                        <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                        <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                        <li><a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
                     </ul>
                 </div>
-                <div class='footer-section'>
+                <div class="footer-section">
                     <h4>Connect With Me</h4>
-                    <div class='social-links'>
-                        <a href='https://github.com' target='_blank' class='social-link' aria-label='GitHub'>
-                            <i class='fab fa-github'></i>
-                        </a>
-                        <a href='https://www.codecademy.com' target='_blank' class='social-link' aria-label='Codecademy'>
-                            <i class='fas fa-graduation-cap'></i>
-                        </a>
-                        <a href='#' class='social-link' aria-label='LinkedIn'>
-                            <i class='fab fa-linkedin'></i>
-                        </a>
-                        <a href='#' class='social-link' aria-label='Email'>
-                            <i class='fas fa-envelope'></i>
-                        </a>
+                    <div class="social-links">
+                        <a href="https://github.com/username/portfolio" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.codecademy.com" target="_blank" class="social-link" aria-label="Codecademy"><i class="fas fa-graduation-cap"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
                     </div>
-                    <p class='repo-link'>
-                        <i class='fab fa-github'></i>
-                        <a href='https://github.com/username/portfolio' target='_blank'>View GitHub Repository</a>
-                    </p>
+                    <p class="repo-link"><i class="fab fa-github"></i> <a href="https://github.com/username/portfolio" target="_blank">View GitHub Repository</a></p>
                 </div>
             </div>
-            <div class='footer-bottom'>
-                <p>&copy; 2026 MyPortfolio. All rights reserved. | Designed with <i class='fas fa-heart'></i></p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MyPortfolio. All rights reserved. | Designed with <i class="fas fa-heart"></i></p>
             </div>
         </div>
     </footer>
 
-    <script src='../js/main.js'></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
