@@ -136,7 +136,7 @@ const Resume = () => {
                   </li>
                 </ul>
                 <div className="social-links">
-                  <a href="https://github.com/username/portfolio" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <a href="https://github.com/donklor/2026spring" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <i className="fab fa-github"></i>
                   </a>
                   <a href="https://www.codecademy.com" target="_blank" rel="noopener noreferrer" aria-label="Codecademy">

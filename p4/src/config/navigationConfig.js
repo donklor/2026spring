@@ -8,29 +8,25 @@ export const navigationItems = [
 
 // Social and external links
 export const socialLinks = [
-  { 
-    icon: 'fab fa-github', 
-    url: 'https://github.com/username/portfolio', 
-    label: 'GitHub',
-    showInFooter: true 
+  {
+    icon: 'fab fa-github',
+    url: 'https://github.com/donklor',
+    label: 'GitHub'
   },
-  { 
-    icon: 'fas fa-graduation-cap', 
-    url: 'https://www.codecademy.com', 
-    label: 'Codecademy',
-    showInFooter: true 
+  {
+    icon: 'fas fa-graduation-cap',
+    url: 'https://www.codecademy.com',
+    label: 'Codecademy'
   },
-  { 
-    icon: 'fab fa-linkedin', 
-    url: '#', 
-    label: 'LinkedIn',
-    showInFooter: true 
+  {
+    icon: 'fab fa-linkedin',
+    url: '#',
+    label: 'LinkedIn'
   },
-  { 
-    icon: 'fas fa-envelope', 
-    url: '#', 
-    label: 'Email',
-    showInFooter: true 
+  {
+    icon: 'fas fa-envelope',
+    url: '#',
+    label: 'Email'
   },
 ];
 
@@ -38,7 +34,7 @@ export const socialLinks = [
 export const portfolioInfo = {
   title: 'MyPortfolio',
   tagline: 'Aspiring Developer and Creative Thinker',
-  description: 'Hello! I am a passionate learner currently exploring the world of technology and development.',
-  githubRepo: 'https://github.com/username/portfolio',
+  description: 'Hello! I am a passionate learner currently exploring the world of technology and development. With a strong foundation in problem-solving and a keen eye for detail, I enjoy creating innovative solutions that make a difference. My journey in tech has been driven by curiosity and a desire to continuously learn and grow.',
+  githubRepo: 'https://github.com/donklor/2026spring',
   copyYear: 2026,
 };

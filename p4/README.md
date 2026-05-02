@@ -1,70 +1,132 @@
-# Getting Started with Create React App
+# Portfolio React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React adaptation of the portfolio website with modularized components and easy-to-update configuration.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This React application is a complete conversion of the original static portfolio website, featuring:
+- **Modular Components**: Navbar and Footer components that can be updated once and automatically reflect across all pages
+- **React Router**: Clean client-side routing between pages
+- **Responsive Design**: Fully responsive layout inherited from the original portfolio
+- **Interactive Features**: Mobile menu toggle, scroll animations, and hover effects
+- **Easy Customization**: Configuration file for quick updates to navigation, social links, and portfolio information
 
-### `npm start`
+## Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+p4/
+├── public/
+│   ├── images/                 # Portfolio images
+│   ├── index.html              # Main HTML file
+│   └── ...
+├── src/
+│   ├── config/
+│   │   └── navigationConfig.js # Easy-to-customize navigation and portfolio info
+│   ├── components/
+│   │   ├── Navbar.js           # Navigation component with mobile menu
+│   │   └── Footer.js           # Footer component with social links
+│   ├── pages/
+│   │   ├── Home.js             # Home page with hero and stats
+│   │   ├── About.js            # About page with qualifications and activities
+│   │   ├── Projects.js         # Projects page with project cards
+│   │   └── Resume.js           # Resume page with experience and skills
+│   ├── styles/
+│   │   ├── index.css           # Main portfolio styles (from original)
+│   │   ├── Navbar.css          # Navbar component styles
+│   │   ├── Footer.css          # Footer component styles
+│   │   ├── Home.css            # Home page styles
+│   │   ├── About.css           # About page styles
+│   │   ├── Projects.css        # Projects page styles
+│   │   └── Resume.css          # Resume page styles
+│   ├── App.js                  # Main app with routing
+│   ├── App.css                 # App layout styles
+│   └── index.js                # React entry point
+├── PORTFOLIO_STRUCTURE.md      # Detailed documentation
+└── package.json
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Quick Start
 
-### `npm test`
+### Installation
+```bash
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Development
+```bash
+npm start
+```
+Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
 
-### `npm run build`
+### Production Build
+```bash
+npm run build
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Customization
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Update Navigation Menu
+Edit `src/config/navigationConfig.js`:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```javascript
+export const navigationItems = [
+  { path: '/', label: 'Home', id: 'home' },
+  { path: '/about', label: 'About', id: 'about' },
+  // Add more pages here
+];
+```
 
-### `npm run eject`
+### Update Social Links
+Edit `src/config/navigationConfig.js`:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```javascript
+export const socialLinks = [
+  {
+    icon: 'fab fa-github',
+    url: 'https://github.com/your-username',
+    label: 'GitHub'
+  },
+  // Add or modify links here
+];
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Update Portfolio Information
+Edit `src/config/navigationConfig.js`:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```javascript
+export const portfolioInfo = {
+  title: 'MyPortfolio',
+  tagline: 'Your tagline here',
+  description: 'Your description here',
+  githubRepo: 'https://github.com/your-username/portfolio',
+  copyYear: 2026,
+};
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Update Page Content
+Each page is a standalone component with easily modifiable content arrays. Edit the data structures inside each page component to change content.
 
-## Learn More
+### Add a New Page
+1. Create a new file in `src/pages/` (e.g., `Blog.js`)
+2. Create a component and export it
+3. Add the route in `src/App.js`
+4. Add the navigation item in `src/config/navigationConfig.js`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Key Features
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Component-Based Architecture**: Easy maintenance and updates
+- **Responsive Design**: Works on all devices
+- **Interactive Elements**: Mobile menu, scroll animations, hover effects
+- **SEO-Friendly**: Proper meta tags and semantic HTML
+- **Fast Loading**: Optimized React build
 
-### Code Splitting
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- React 19.2.5
+- React Router DOM 7.x
+- Font Awesome 6.x
+- CSS3 with responsive design
 
-### Analyzing the Bundle Size
+## Adapted From
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This React app was adapted from the original static portfolio website located in the `portfolio` folder, converting all HTML pages and JavaScript functionality into modular React components while preserving the original design and functionality.

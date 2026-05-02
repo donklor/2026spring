@@ -17,10 +17,10 @@ p4/
 │   │   ├── Navbar.js           # Navigation component
 │   │   └── Footer.js           # Footer component (uses navigation config)
 │   ├── pages/
-│   │   ├── Home.js             # Home page
-│   │   ├── About.js            # About page
-│   │   ├── Projects.js         # Projects page
-│   │   └── Resume.js           # Resume page
+│   │   ├── Home.js             # Home page with hero and stats
+│   │   ├── About.js            # About page with qualifications and activities
+│   │   ├── Projects.js         # Projects page with project cards
+│   │   └── Resume.js           # Resume page with experience and skills
 │   ├── styles/
 │   │   ├── index.css           # Main portfolio styles (from original)
 │   │   ├── Navbar.css          # Navbar component styles
@@ -120,7 +120,7 @@ npm install
 npm start
 
 # Build for production
-npm build
+npm run build
 ```
 
 ## Key Features
@@ -137,3 +137,12 @@ npm build
 - React Router DOM 6.x
 - Font Awesome for icons
 - CSS3 for styling
+
+## Adapted from Original Portfolio
+
+This React app was adapted from the original static portfolio website with the following improvements:
+- Component-based architecture for better maintainability
+- Centralized configuration for easy updates
+- React Router for seamless page navigation
+- State management for interactive features
+- Modular CSS for better organization

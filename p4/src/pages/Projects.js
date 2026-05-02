@@ -16,7 +16,7 @@ const Projects = () => {
         {
           icon: 'fab fa-github',
           label: 'Source Code',
-          url: 'https://github.com/username/portfolio',
+          url: 'https://github.com/donklor/2026spring',
         },
       ],
     },
@@ -33,7 +33,7 @@ const Projects = () => {
         {
           icon: 'fab fa-github',
           label: 'Source Code',
-          url: 'https://github.com/username/portfolio',
+          url: 'https://github.com/donklor/2026spring',
         },
       ],
     },
@@ -50,7 +50,7 @@ const Projects = () => {
         {
           icon: 'fab fa-github',
           label: 'Source Code',
-          url: 'https://github.com/username/portfolio',
+          url: 'https://github.com/donklor/2026spring',
         },
       ],
     },
@@ -67,7 +67,7 @@ const Projects = () => {
         {
           icon: 'fab fa-github',
           label: 'Source Code',
-          url: 'https://github.com/username/portfolio',
+          url: 'https://github.com/donklor/2026spring',
         },
       ],
     },
@@ -78,7 +78,7 @@ const Projects = () => {
       <section className="hero" style={{ padding: '4rem 0' }}>
         <div className="container">
           <h1 className="hero-title">My Projects</h1>
-          <p className="hero-subtitle">Showcasing my work and innovations</p>
+          <p className="hero-subtitle">Showcasing my work and innovation.</p>
         </div>
       </section>
 

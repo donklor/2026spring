@@ -4,7 +4,12 @@ import { navigationItems, socialLinks, portfolioInfo } from '../config/navigatio
 import '../styles/Footer.css';
 
 const Footer = () => {
-  const footerSocialLinks = socialLinks.filter(link => link.showInFooter);
+  const footerIcons = {
+    '/': 'fas fa-home',
+    '/about': 'fas fa-user',
+    '/projects': 'fas fa-project-diagram',
+    '/resume': 'fas fa-file-alt'
+  };
 
   return (
     <footer className="footer">
@@ -20,7 +25,7 @@ const Footer = () => {
               {navigationItems.map((item) => (
                 <li key={item.id}>
                   <Link to={item.path}>
-                    <i className="fas fa-link"></i> {item.label}
+                    <i className={footerIcons[item.path]}></i> {item.label}
                   </Link>
                 </li>
               ))}
@@ -29,7 +34,7 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Connect With Me</h4>
             <div className="social-links">
-              {footerSocialLinks.map((link, index) => (
+              {socialLinks.map((link, index) => (
                 <a
                   key={index}
                   href={link.url}
