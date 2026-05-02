@@ -75,7 +75,7 @@ const Projects = () => {
 
   return (
     <main>
-      <section className="hero" style={{ padding: '4rem 0' }}>
+      <section className="hero">
         <div className="container">
           <h1 className="hero-title">My Projects</h1>
           <p className="hero-subtitle">Showcasing my work and innovation.</p>

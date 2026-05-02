@@ -4,13 +4,6 @@ import { navigationItems, socialLinks, portfolioInfo } from '../config/navigatio
 import '../styles/Footer.css';
 
 const Footer = () => {
-  const footerIcons = {
-    '/': 'fas fa-home',
-    '/about': 'fas fa-user',
-    '/projects': 'fas fa-project-diagram',
-    '/resume': 'fas fa-file-alt'
-  };
-
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -22,13 +15,20 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Quick Links</h4>
             <ul className="footer-links">
-              {navigationItems.map((item) => (
-                <li key={item.id}>
-                  <Link to={item.path}>
-                    <i className={footerIcons[item.path]}></i> {item.label}
-                  </Link>
-                </li>
-              ))}
+              {navigationItems.map((item) => {
+                const icons = {
+                  '/': 'fas fa-home',
+                  '/about': 'fas fa-user',
+                  '/projects': 'fas fa-project-diagram'
+                };
+                return (
+                  <li key={item.id}>
+                    <Link to={item.path}>
+                      <i className={icons[item.path]}></i> {item.label}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="footer-section">

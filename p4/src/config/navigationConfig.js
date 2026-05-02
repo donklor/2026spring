@@ -3,7 +3,6 @@ export const navigationItems = [
   { path: '/', label: 'Home', id: 'home' },
   { path: '/about', label: 'About', id: 'about' },
   { path: '/projects', label: 'Projects', id: 'projects' },
-  { path: '/resume', label: 'Resume', id: 'resume' },
 ];
 
 // Social and external links

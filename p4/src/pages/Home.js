@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { portfolioInfo } from '../config/navigationConfig';
 import '../styles/Home.css';
 
 const Home = () => {
-  const [animatedStats, setAnimatedStats] = useState(false);
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -24,36 +22,13 @@ const Home = () => {
     return () => observer.disconnect();
   }, []);
 
-  const handleImageHover = (e) => {
-    const image = e.currentTarget;
-    if (e.type === 'mouseenter') {
-      image.style.transform = 'scale(1.05)';
-      image.style.transition = 'transform 0.3s ease';
-    } else {
-      image.style.transform = 'scale(1)';
-    }
-  };
-
-  const stats = [
-    { icon: 'fas fa-code', number: '10+', label: 'Projects Completed' },
-    { icon: 'fas fa-book', number: '5+', label: 'Courses Completed' },
-    { icon: 'fas fa-users', number: '3+', label: 'Team Projects' },
-    { icon: 'fas fa-award', number: '2', label: 'Achievements' },
-  ];
-
   return (
     <main>
       <section className="hero">
         <div className="hero-container">
           <div className="profile-section">
             <div className="profile-image-container">
-              <img
-                src="/images/profile.jpg"
-                alt="Profile"
-                className="profile-image"
-                onMouseEnter={handleImageHover}
-                onMouseLeave={handleImageHover}
-              />
+              <img src="/images/profile.jpg" alt="Profile Photo" className="profile-image" />
               <div className="profile-overlay">
                 <i className="fas fa-camera"></i>
               </div>
@@ -85,13 +60,26 @@ const Home = () => {
       <section className="stats-section">
         <div className="container">
           <div className="stats-grid">
-            {stats.map((stat, index) => (
-              <div key={index} className="stat-item">
-                <i className={`${stat.icon} stat-icon`}></i>
-                <h3 className="stat-number">{stat.number}</h3>
-                <p className="stat-label">{stat.label}</p>
-              </div>
-            ))}
+            <div className="stat-item">
+              <i className="fas fa-code stat-icon"></i>
+              <h3 className="stat-number">10+</h3>
+              <p className="stat-label">Projects Completed</p>
+            </div>
+            <div className="stat-item">
+              <i className="fas fa-book stat-icon"></i>
+              <h3 className="stat-number">5+</h3>
+              <p className="stat-label">Courses Completed</p>
+            </div>
+            <div className="stat-item">
+              <i className="fas fa-users stat-icon"></i>
+              <h3 className="stat-number">3+</h3>
+              <p className="stat-label">Team Projects</p>
+            </div>
+            <div className="stat-item">
+              <i className="fas fa-award stat-icon"></i>
+              <h3 className="stat-number">2</h3>
+              <p className="stat-label">Achievements</p>
+            </div>
           </div>
         </div>
       </section>
