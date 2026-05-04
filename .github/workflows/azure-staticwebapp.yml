@@ -9,6 +9,10 @@ permissions:
   pages: write
   id-token: write
 
+# Add this to force the runner to use Node 24 as requested by the warning
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
@@ -19,7 +23,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24 # Updated to Node 24
           cache: 'npm'
           cache-dependency-path: p4/package-lock.json
 
@@ -34,7 +38,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Point this to your build folder inside the p4 directory
           path: p4/build
 
       - name: Deploy to GitHub Pages
