@@ -23,7 +23,9 @@ jobs:
       - name: Install dependencies
         working-directory: p4
         run: npm install
-
+      - name: Mante
+        working-directory: p4
+        run: npm start
       - name: Build
         working-directory: p4
         run: CI=false npm run build
