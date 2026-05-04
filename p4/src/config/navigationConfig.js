@@ -19,7 +19,7 @@ export const socialLinks = [
   },
   {
     icon: 'fab fa-linkedin',
-    url: '#',
+    url: 'www.linkedin.com/in/dərgah-quliyev-308268247',
     label: 'LinkedIn'
   },
   {
