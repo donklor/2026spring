@@ -1,4 +1,4 @@
-name: Deploy
+name: Deploy React App
 
 on:
   push:
@@ -24,11 +24,11 @@ jobs:
         working-directory: p4
         run: npm install
 
-      - name: Build
+      - name: Build project
         working-directory: p4
         run: CI=false npm run build
 
-      - name: Upload artifact
+      - name: Upload build folder
         uses: actions/upload-pages-artifact@v3
         with:
           path: p4/build
@@ -38,5 +38,6 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
+
     steps:
       - uses: actions/deploy-pages@v4
