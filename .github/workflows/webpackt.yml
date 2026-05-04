@@ -26,12 +26,12 @@ jobs:
 
       - name: Build
         working-directory: p4
-        run: npm run build
+        run: CI=false npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: p4/dist
+          path: p4/build
 
   deploy:
     needs: build
