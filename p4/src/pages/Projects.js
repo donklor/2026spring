@@ -5,70 +5,36 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Project 1: Web Application',
-      tag: 'Featured',
+      title: 'Project 1: Logic Gates with Arduino',
+      
       description:
-        'A comprehensive web application built with modern technologies. This project demonstrates full-stack development skills, responsive design, and user-focused features.',
-      technologies: ['HTML5', 'CSS3', 'JavaScript', 'React'],
+        'A project demonstrating digital logic gates implemented using Arduino. This hands-on project explores fundamental electronics and programming concepts through practical circuit building.',
+      technologies: ['Arduino', 'Electronics', 'Logic Gates', '#SITE1101', '#LogicGates', '#ADAUniversity'],
       image: '/images/project1.jpg',
       links: [
-        { icon: 'fas fa-external-link-alt', label: 'Live Demo', url: '#project1-demo' },
-        {
-          icon: 'fab fa-github',
-          label: 'Source Code',
-          url: 'https://github.com/donklor/2026spring',
-        },
+        { icon: 'fab fa-youtube', label: 'Demo Video', url: 'https://www.youtube.com/watch?v=qtVFufVrY3M' },
       ],
     },
     {
       id: 2,
-      title: 'Project 2: Hour of Code',
-      tag: 'Educational',
+      title: 'Project 2: Hour of Code Teaching',
+      
       description:
-        'An interactive coding tutorial platform created for Hour of Code. It includes hands-on lessons, challenge exercises, and progress feedback for beginner learners.',
-      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Node.js'],
+        'Volunteering to teach programming basics to school students during Hour of Code. Focused on introducing young learners to coding concepts through interactive sessions and hands-on activities.',
+      technologies: ['Teaching', 'Programming', 'Education'],
       image: '/images/project2.jpg',
-      links: [
-        { icon: 'fas fa-external-link-alt', label: 'Live Demo', url: '#project2-demo' },
-        {
-          icon: 'fab fa-github',
-          label: 'Source Code',
-          url: 'https://github.com/donklor/2026spring',
-        },
-      ],
+      links: [],
     },
     {
       id: 3,
-      title: 'Project 3: Robotics',
-      tag: 'Hardware',
+      title: 'Project 3: Robotic Drawing',
+      
       description:
-        'An autonomous line-following robot built with Arduino, IR sensors, and motor controllers. This project highlights hardware-software integration and engineering problem solving.',
-      technologies: ['Arduino', 'C++', 'Electronics', 'Sensors'],
+        'A robotic arm designed to draw patterns and shapes using Arduino and servo motors. This project combines mechanical engineering, programming, and creativity to create artistic outputs through automation.',
+      technologies: ['Robotics', 'Drawing', 'Servo Motors', '#Mindstorms', '#SITE1101', '#CodeArt', '#BotlarYurdu'],
       image: '/images/project3.jpg',
       links: [
-        { icon: 'fas fa-video', label: 'Demo Video', url: '#project3-demo' },
-        {
-          icon: 'fab fa-github',
-          label: 'Source Code',
-          url: 'https://github.com/donklor/2026spring',
-        },
-      ],
-    },
-    {
-      id: 4,
-      title: 'Project 4: Task Manager App',
-      tag: 'Mobile',
-      description:
-        'A mobile productivity app that supports task management, reminders, and team collaboration. It highlights design thinking, usability, and mobile-first development.',
-      technologies: ['React Native', 'Firebase', 'Redux', 'TypeScript'],
-      image: '/images/project4.jpg',
-      links: [
-        { icon: 'fas fa-external-link-alt', label: 'Live Demo', url: '#project4-demo' },
-        {
-          icon: 'fab fa-github',
-          label: 'Source Code',
-          url: 'https://github.com/donklor/2026spring',
-        },
+        { icon: 'fab fa-youtube', label: 'Demo Video', url: 'https://www.youtube.com/watch?v=roJi6C8b-4I' },
       ],
     },
   ];

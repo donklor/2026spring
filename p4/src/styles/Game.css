@@ -116,9 +116,41 @@
   align-items: center;
   font-size: 2rem;
   font-weight: bold;
-  transition: all 0.15s ease;
+  transition: all 0.2s ease;
   position: relative;
-  transform: scale(1);
+  animation: appear 0.3s ease-out;
+}
+
+.tile.empty {
+  background: rgba(238, 228, 218, 0.35);
+}
+
+.tile.merging {
+  animation: mergePulse 0.3s ease-out;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes mergePulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(243, 156, 18, 0.6);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .tile.empty {
@@ -261,6 +293,11 @@
   border: 3px solid #bbada0;
 }
 
+.game-over-message.won {
+  border-color: #f67c5f;
+  animation: winCelebration 0.6s ease-out;
+}
+
 .game-over-message h2 {
   color: #776e65;
   font-size: 2rem;
@@ -297,6 +334,21 @@
   to {
     transform: translateY(0) scale(1);
     opacity: 1;
+  }
+}
+
+@keyframes winCelebration {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(1.05);
   }
 }
 

@@ -33,6 +33,7 @@ const Home = () => {
                 <i className="fas fa-camera"></i>
               </div>
             </div>
+            <h3 className="profile-name">Dargah Guliyev</h3>
           </div>
           <div className="content-section">
             <h1 className="hero-title">Welcome to My Portfolio</h1>
@@ -42,8 +43,8 @@ const Home = () => {
             </p>
             <p className="hero-description">
               Through various projects and activities, I have developed skills in web development,
-              programming, and collaborative teamwork. I am always eager to take on new challenges and
-              expand my knowledge in emerging technologies.
+              programming, collaborative teamwork, and am currently exploring finance. I am always eager to take on new challenges and
+              expand my knowledge in emerging technologies and financial concepts.
             </p>
             <div className="hero-buttons">
               <Link to="/projects" className="btn btn-primary">
