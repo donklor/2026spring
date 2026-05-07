@@ -6,14 +6,17 @@ on:
   pull_request:
     branches: [ "master" ]
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [18.x, 20.x, 22.x]
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -23,21 +26,32 @@ jobs:
         with:
           node-version: 24
           cache: 'npm'
-          # This line tells it where to find the lockfile for caching
           cache-dependency-path: p4/package-lock.json
 
       - name: Install dependencies
-        # This tells GitHub to 'cd p4' before running the command
         working-directory: p4
         run: npm install
 
       - name: Build app
-        # This also needs to be inside p4
         working-directory: p4
         run: CI=false npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Ensure this points to the build folder inside p4
           path: p4/build
+
+  # NEW: This job actually puts the files on the website
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
