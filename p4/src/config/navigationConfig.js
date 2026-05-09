@@ -34,7 +34,7 @@ export const socialLinks = [
 export const portfolioInfo = {
   title: 'MyPortfolio',
   tagline: 'Aspiring Developer and Creative Thinker',
-  description: 'Hello! I am a passionate learner currently exploring the worlds of technology, development, and finance. With a strong foundation in problem-solving and a keen eye for detail, I enjoy creating innovative solutions that make a difference. My journey has been driven by curiosity about emerging technologies and financial markets, and a desire to continuously learn and grow.',
+  description: 'Hello! I am a passionate learner currently exploring the worlds of computer science, mathematics, and economic theory. With a strong foundation in Olympiad-level problem solving and a keen eye for analytical detail, I enjoy creating innovative solutions grounded in rigorous logic. My journey has been driven by a curiosity about the scientific principles underlying financial systems and a desire to continuously integrate computational methods with quantitative models.',
   githubRepo: 'https://github.com/donklor/2026spring',
   copyYear: 2026,
 };

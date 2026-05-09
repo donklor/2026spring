@@ -77,12 +77,7 @@ const About = () => {
             <div className="about-intro">
               <h2 className="section-title">Who I Am</h2>
               <p>
-                I am a dedicated learner with a passion for technology and creativity. I enjoy solving problems
-                through code, design, and collaboration.
-              </p>
-              <p>
-                My experience includes coursework, independent projects, and activities that span web development,
-                robotics, and educational outreach.
+                Hello! I am a passionate learner currently exploring the worlds of computer science, mathematics, and economic theory. With a strong foundation in Olympiad-level problem solving and a keen eye for analytical detail, I enjoy creating innovative solutions grounded in rigorous logic. My journey has been driven by a curiosity about the scientific principles underlying financial systems and a desire to continuously integrate computational methods with quantitative models. Through my background in mathematics and economics competitions, I have developed advanced skills in algorithmic thinking and collaborative teamwork. I am currently focused on leveling up my technical knowledge of finance as a science, exploring the mathematical frameworks that govern the field. I am always eager to take on new challenges that allow me to expand my expertise in emerging technologies and theoretical financial concepts.
               </p>
             </div>
             <div>

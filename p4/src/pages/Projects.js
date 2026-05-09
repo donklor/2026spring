@@ -6,7 +6,6 @@ const Projects = () => {
     {
       id: 1,
       title: 'Project 1: Logic Gates with Arduino',
-      
       description:
         'A project demonstrating digital logic gates implemented using Arduino. This hands-on project explores fundamental electronics and programming concepts through practical circuit building.',
       technologies: ['Arduino', 'Electronics', 'Logic Gates', '#SITE1101', '#LogicGates', '#ADAUniversity'],
@@ -18,7 +17,6 @@ const Projects = () => {
     {
       id: 2,
       title: 'Project 2: Hour of Code Teaching',
-      
       description:
         'Volunteering to teach programming basics to school students during Hour of Code. Focused on introducing young learners to coding concepts through interactive sessions and hands-on activities.',
       technologies: ['Teaching', 'Programming', 'Education'],
@@ -28,7 +26,6 @@ const Projects = () => {
     {
       id: 3,
       title: 'Project 3: Robotic Drawing',
-      
       description:
         'A robotic arm designed to draw patterns and shapes using Arduino and servo motors. This project combines mechanical engineering, programming, and creativity to create artistic outputs through automation.',
       technologies: ['Robotics', 'Drawing', 'Servo Motors', '#Mindstorms', '#SITE1101', '#CodeArt', '#BotlarYurdu'],
