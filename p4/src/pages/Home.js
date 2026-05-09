@@ -1,10 +1,28 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { portfolioInfo } from '../config/navigationConfig';
 import '../styles/Home.css';
 
 const Home = () => {
+  const [dashArray, setDashArray] = useState('');
+  const [animationSpeed, setAnimationSpeed] = useState(25);
+  const [animationDirection, setAnimationDirection] = useState('normal');
+
   useEffect(() => {
+    // Generate random dash array with bigger range
+    const segments = [];
+    for (let i = 0; i < 20; i++) {
+      const dash = Math.floor(Math.random() * 48) + 2; // 2-50px dash
+      const gap = Math.floor(Math.random() * 48) + 2; // 2-50px gap
+      segments.push(dash, gap);
+    }
+    setDashArray(segments.join(' '));
+
+    // Randomize speed (10-40 seconds)
+    setAnimationSpeed(Math.floor(Math.random() * 31) + 10);
+
+    // Randomize direction (50% chance clockwise or counter-clockwise)
+    setAnimationDirection(Math.random() > 0.5 ? 'normal' : 'reverse');
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -27,12 +45,21 @@ const Home = () => {
       <section className="hero">
         <div className="hero-container">
           <div className="profile-section">
-            <div className="profile-image-container">
-              <img src="/images/profile.jpg" alt="Profile Photo" className="profile-image" />
-              <div className="profile-overlay">
-                <i className="fas fa-camera"></i>
-              </div>
-            </div>
+          <div className="profile-image-container">
+            <svg
+              className="dashed-circle"
+              width="530"
+              height="530"
+              viewBox="0 0 530 530"
+              style={{
+                animationDuration: `${animationSpeed}s`,
+                animationDirection: animationDirection
+              }}
+            >
+              <circle cx="265" cy="265" r="260" fill="none" stroke="#60a5fa" strokeWidth="5" strokeDasharray={dashArray} />
+            </svg>
+            <img src="/images/profile.jpg" alt="Profile Photo" className="profile-image" />
+          </div>
             <h3 className="profile-name">Dargah Guliyev</h3>
           </div>
           <div className="content-section">
