@@ -58,7 +58,7 @@ const Home = () => {
             >
               <circle cx="265" cy="265" r="260" fill="none" stroke="#60a5fa" strokeWidth="5" strokeDasharray={dashArray} />
             </svg>
-            <img src="/images/profile.jpg" alt="Profile Photo" className="profile-image" />
+            <img src="./images/profile.jpg" alt="Profile Photo" className="profile-image" />
           </div>
             <h3 className="profile-name">Dargah Guliyev</h3>
           </div>
