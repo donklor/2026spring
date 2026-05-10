@@ -388,7 +388,7 @@ const Game = () => {
     <main>
       <section className="hero">
         <div className="container">
-          <h1 className="hero-title">2048 Game</h1>
+          <h1 className="hero-title left-aligned">2048 Game</h1>
           <p className="hero-subtitle">Slide tiles to combine them and reach 2048!</p>
         </div>
       </section>

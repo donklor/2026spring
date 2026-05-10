@@ -66,7 +66,7 @@ const About = () => {
     <main>
       <section className="hero">
         <div className="container">
-          <h1 className="hero-title">About Me</h1>
+          <h1 className="hero-title left-aligned">About Me</h1>
           <p className="hero-subtitle">My background, qualifications, and activities.</p>
         </div>
       </section>

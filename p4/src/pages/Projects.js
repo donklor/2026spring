@@ -40,8 +40,7 @@ const Projects = () => {
     <main>
       <section className="hero">
         <div className="container">
-          <h1 className="hero-title">My Projects</h1>
-          <p className="hero-subtitle">Showcasing my work and innovation.</p>
+          <h1 className="hero-title left-aligned">My Projects</h1>
         </div>
       </section>
 

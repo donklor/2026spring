@@ -7,6 +7,8 @@ const Home = () => {
   const [dashArray, setDashArray] = useState('');
   const [animationSpeed, setAnimationSpeed] = useState(25);
   const [animationDirection, setAnimationDirection] = useState('normal');
+  const [displayText, setDisplayText] = useState('');
+  const fullText = 'Hello I am Dargah Guliyev';
 
   useEffect(() => {
     // Generate random dash array with bigger range
@@ -23,6 +25,19 @@ const Home = () => {
 
     // Randomize direction (50% chance clockwise or counter-clockwise)
     setAnimationDirection(Math.random() > 0.5 ? 'normal' : 'reverse');
+
+    // Typewriter effect
+    let index = 0;
+    const timer = setInterval(() => {
+      if (index < fullText.length) {
+        setDisplayText(fullText.slice(0, index + 1));
+        index++;
+      } else {
+        clearInterval(timer);
+      }
+    }, 100); // 100ms per character
+
+    return () => clearInterval(timer);
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -60,10 +75,9 @@ const Home = () => {
             </svg>
             <img src="./images/profile.jpg" alt="Profile Photo" className="profile-image" />
           </div>
-            <h3 className="profile-name">Dargah Guliyev</h3>
           </div>
           <div className="content-section">
-            <h1 className="hero-title">Welcome to My Portfolio</h1>
+             <h1 className="hero-title">{displayText}</h1>
             <h2 className="hero-subtitle">{portfolioInfo.tagline}</h2>
             <p className="hero-description">
               {portfolioInfo.description}
